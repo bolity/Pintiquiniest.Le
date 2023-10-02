@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.titlees {
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: white;
+  font-family: monospace;
+  color: black;
+  font-weight: 1400;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.title h2 {
+  padding-top: 15px;
+  font-family: monospace;
+  font-size: 15px;
+  color: #00c200;
+}
+
+.dest {
+  color: #00c200;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #bfbfbf;
+}
+
+.cuadrado {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+.linea {
+  display: flex;
+}
+
+.cuadrado-interno {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: #c2c2c2;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 10px;
+  border: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.theme-button {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.theme-button button {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.theme-button button::before {
+  content: "\f186";
+  font-family: FontAwesome;
+  font-size: 24px;
+  color: black;
+}
+
+.dark-theme {
+  background-color: #303030;
+  color: white;
+}
+
+.dark-cuadrado {
+  background-color: #242424;
+  color: white;
+}
+
+.dark-title {
+  background-color: #242424;
+  color: white;
+}
+
+.dark-comprobar {
+  background-color: #242424;
+  color: white;
+}
+
+.comprobar {
+  padding-top: 5px;
+}
+
+.comprobarBtn {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  width: 330px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.cuadrado-interno.correcto {
+  background-color: green;
+}
+
+.cuadrado-interno.incorrecto {
+  background-color: orange;
+}
+
+.cuadrado-interno.vacio {
+  background-color: gray;
+}
+
